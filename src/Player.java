@@ -111,7 +111,7 @@ public class Player {
                 gsm.states.pop();
                 gsm.states.push(new LevelState(gsm, "/map" + levelCounter + ".map", levelCounter,0));
             }
-            else{gsm.states.pop(); System.out.println("hello");}
+            else{gsm.states.pop();}
         }
 
         for(int i = 0; i < b.length; i++){

@@ -72,7 +72,6 @@ public class Map {
             height = Integer.parseInt(br.readLine());
             GameState.spawnPoint = spawnPointX;
             GameState.endPoint = width;
-            System.out.println(GameState.backgroundX);
 
             int playerXOffset = (GamePanel.WIDTH / 2 - (spawnPointX)*Blocks.blockSize + p.getWidth());
             int playerYOffset = (3* GamePanel.HEIGHT / 5 + p.getHeight()) - (height - spawnPointY + 1)*Blocks.blockSize;

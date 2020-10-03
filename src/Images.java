@@ -31,7 +31,7 @@ public class Images {
             menu = ImageIO.read(getClass().getResourceAsStream("/menuField.png"));
             menuOptions[0] = ImageIO.read(getClass().getResourceAsStream("/start.png"));
             menuOptions[1] = ImageIO.read(getClass().getResourceAsStream("/help.png"));
-            menuOptions[2] = ImageIO.read(getClass().getResourceAsStream("/help.png"));
+            menuOptions[2] = ImageIO.read(getClass().getResourceAsStream("/quit.png"));
             levels[0] = ImageIO.read(getClass().getResourceAsStream("/level1Background.png"));
             levels[1] = ImageIO.read(getClass().getResourceAsStream("/level2Background.png"));
         }

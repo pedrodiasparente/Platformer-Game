@@ -5,10 +5,10 @@ public class MenuState extends GameState {
 
     private String[] options = {"Start", "Help", "Quit"};
     private int currentSelection = 0;
-    private int optionWidth = 300;
-    private int optionWidthSelect = 450;
-    private int optionHeight = 100;
-    private int optionHeightSelect = 150;
+    private int optionWidth = 200;
+    private int optionWidthSelect = 300;
+    private int optionHeight = 80;
+    private int optionHeightSelect = 120;
 
     private int firstLevel = 1; //maybe if i play with this i cant get save points
 
@@ -30,13 +30,13 @@ public class MenuState extends GameState {
         g.drawImage(Images.menu,0,0,GamePanel.WIDTH,GamePanel.HEIGHT,null);
         for(int i = 0; i < options.length; i++){
             if(i == currentSelection) {
-                g.drawImage(Images.menuOptions[i],GamePanel.WIDTH / 2 - optionWidthSelect/options[i].length()-125 - options[i].length()*4,GamePanel.HEIGHT / 2 + i * 170 - options.length * 85,optionWidthSelect,optionHeightSelect,null);
+                g.drawImage(Images.menuOptions[i],GamePanel.WIDTH / 2  - optionWidthSelect /2,GamePanel.HEIGHT / 2 + i * 170 - options.length * 85,optionWidthSelect,optionHeightSelect,null);
             }
             else {
                 //g.setColor(Color.BLACK);
                 //g.setFont(new Font(null, Font.BOLD,62));
                 //g.drawString(options[i], GamePanel.WIDTH / 2 - 75, GamePanel.HEIGHT / 2 + i * 150 - options.length * 40);
-                g.drawImage(Images.menuOptions[i],GamePanel.WIDTH / 2 - optionWidth/options[i].length() -80 - options[i].length()*4,GamePanel.HEIGHT / 2 + i * 170 - options.length * 75,optionWidth,optionHeight,null);
+                g.drawImage(Images.menuOptions[i],GamePanel.WIDTH / 2 - optionWidth/2,GamePanel.HEIGHT / 2 + i * 170 - options.length * 75,optionWidth,optionHeight,null);
             }
         }
     }

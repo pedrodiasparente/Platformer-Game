@@ -27,7 +27,7 @@ public class Images {
             playerSprites[8] = ImageIO.read(getClass().getResourceAsStream("/playerSprite8.png"));
             playerSprites[9] = ImageIO.read(getClass().getResourceAsStream("/playerSprite9.png"));
             menu = ImageIO.read(getClass().getResourceAsStream("/menuField.png"));
-            levels[0] = ImageIO.read(getClass().getResourceAsStream("/level99Background.png"));
+            levels[0] = ImageIO.read(getClass().getResourceAsStream("/level1Background.png"));
             levels[1] = ImageIO.read(getClass().getResourceAsStream("/level2Background.png"));
         }
         catch (IOException e){

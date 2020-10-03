@@ -8,11 +8,13 @@ public class Images {
     public static BufferedImage[] playerSprites;
     public static BufferedImage menu, flag;
     public static BufferedImage[] levels;
+    public static BufferedImage[] menuOptions;
 
     public Images(){
         blocks = new BufferedImage[1];
         playerSprites = new BufferedImage[10];
         levels = new BufferedImage[2];
+        menuOptions = new BufferedImage[3];
         try{
             blocks[0] = ImageIO.read(getClass().getResourceAsStream("/block_brick.png"));
             flag = ImageIO.read(getClass().getResourceAsStream("/flag.png"));
@@ -27,6 +29,9 @@ public class Images {
             playerSprites[8] = ImageIO.read(getClass().getResourceAsStream("/playerSprite8.png"));
             playerSprites[9] = ImageIO.read(getClass().getResourceAsStream("/playerSprite9.png"));
             menu = ImageIO.read(getClass().getResourceAsStream("/menuField.png"));
+            menuOptions[0] = ImageIO.read(getClass().getResourceAsStream("/start.png"));
+            menuOptions[1] = ImageIO.read(getClass().getResourceAsStream("/help.png"));
+            menuOptions[2] = ImageIO.read(getClass().getResourceAsStream("/help.png"));
             levels[0] = ImageIO.read(getClass().getResourceAsStream("/level1Background.png"));
             levels[1] = ImageIO.read(getClass().getResourceAsStream("/level2Background.png"));
         }

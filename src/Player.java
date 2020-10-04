@@ -205,6 +205,7 @@ public class Player {
 
         if(right && !rightCollision){
             GameState.xOffset+=moveSpeed;
+            Sounds.playSound("./bruh.wav");
         }
         if(left && !leftCollision){
             GameState.xOffset-=moveSpeed;

@@ -32,8 +32,8 @@ public class Images {
             menuOptions[0] = ImageIO.read(getClass().getResourceAsStream("/start.png"));
             menuOptions[1] = ImageIO.read(getClass().getResourceAsStream("/help.png"));
             menuOptions[2] = ImageIO.read(getClass().getResourceAsStream("/quit.png"));
-            levels[0] = ImageIO.read(getClass().getResourceAsStream("/level1Background.png"));
-            levels[1] = ImageIO.read(getClass().getResourceAsStream("/level2Background.png"));
+            levels[0] = ImageIO.read(getClass().getResourceAsStream("/level4Background.png"));
+            levels[1] = ImageIO.read(getClass().getResourceAsStream("/level4Background.png"));
         }
         catch (IOException e){
             e.printStackTrace();

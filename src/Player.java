@@ -205,7 +205,6 @@ public class Player {
 
         if(right && !rightCollision){
             GameState.xOffset+=moveSpeed;
-            Sounds.playSound("./bruh.wav");
         }
         if(left && !leftCollision){
             GameState.xOffset-=moveSpeed;
@@ -240,6 +239,7 @@ public class Player {
     public void keyPressed(int k){
         if(k == KeyEvent.VK_RIGHT) {
             right = true;
+            Sounds.playSound("./sounds/bruh.mp3");
             if(!lastDirectionRight) {
                 lastDirectionRight = true;
                 spriteCounter = 1;

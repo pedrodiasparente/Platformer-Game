@@ -6,8 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/maps" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/textures" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sounds" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
